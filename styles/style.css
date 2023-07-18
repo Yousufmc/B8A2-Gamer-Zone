@@ -1,19 +1,64 @@
 /* Shared Style... */
-*{margin: 0px;
-padding: 0px;
+* {
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+  margin: 0px;
+  padding: 0px;
 }
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+.btn {
+ padding: 21px 40px;
+ /* border-radius: 48px; */
+ width: 70px;
+ height: 16px; 
+}
+.headline {
+  font-size: 48px;
+  font-weight: 700;
+}
+.description {
+  font-size: 20px;
+  font-weight: 500;
+  color: #534064;
+}
+
+
 .nav-container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .nav-manus {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    width: 50%;
-
-      
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 50%;
 }
 .nav-manus a {
-    text-decoration: none;
+  text-decoration: none;
+}
+.nav-manu-icon {
+  display: flex;
+  justify-content: flex-start;
+}
+.button-primary {
+  color: white;
+  border-radius: 48px;
+  background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+}
+.button-secondary {
+  color: white;
+  border-radius: 48px;
+  background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+}
+/* banner section */
+.goat {
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  font-size: 95px;
+  font-weight: 800;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
