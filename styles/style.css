@@ -1,0 +1,19 @@
+/* Shared Style... */
+*{margin: 0px;
+padding: 0px;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-manus {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 50%;
+
+      
+}
+.nav-manus a {
+    text-decoration: none;
+}
