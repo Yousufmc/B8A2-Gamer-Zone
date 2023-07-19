@@ -4,11 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gamer</title>
-
     <link rel="shortcut icon" href="./images/Frame.png" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/style.css" />
-  </head>
-  <body>
+    
     <!-- header starts here. -->
     <header>
       <!-- Navbar Section Starts here. -->
@@ -18,7 +16,6 @@
             <img src="./images/Frame.png" alt="" />
             <h2 class="nav-title"><span class="linear-text">G</span>amer</h2>
           </div>
-
           <ul class="nav-items-container">
             <li class="nav-item"><a href="">About us</a></li>
             <li class="nav-item"><a href="">Developers</a></li>
@@ -31,7 +28,7 @@
         </div>
       </nav>
       <!-- Banner Section Starts here. -->
-      <div class="banner-container">
+      <div class="banner-container max-width">
         <div class="banner-background-img">
           <div class="banner-content">
             <h2 class="banner-title headline">Play Like The</h2>
@@ -64,28 +61,33 @@
       <p></p>
       <div class="online-Container">
         <div class="online-card">
-          <img src="./images/Rectangle 4.png" alt="" />
+          <img  src="./images/Rectangle 4.png" alt="image" class="online-img-hover" />
+          <div class="play-button">&#xf144;</div>
           <p class="card-data">
             No Download. No Installs. Play<br />
             games Instantly on Gamer.
           </p>
         </div>
         <div class="online-card">
-          <img src="./images/Rectangle 5.png" alt="" />
+          <img src="./images/Rectangle 5.png" alt="image" class="online-img-hover"/>
+          <div class="play-button">&#xf144;</div>
           <p class="card-data">
             Did you score? #unblocked games<br />
             #school
           </p>
         </div>
         <div class="online-card">
-          <img src="./images/Rectangle 7.png" alt="" />
+          <img src="./images/Rectangle 7.png" alt="image" class="online-img-hover" />
+          
+          <div class="play-button">&#xf144;</div>
           <p class="card-data">
             Breaking game records<br />
             like OG
           </p>
         </div>
         <div class="online-card">
-          <img src="./images/Rectangle 6.png" alt="" />
+          <img src="./images/Rectangle 6.png" alt="image" class="online-img-hover" />
+          <div class="play-button">&#xf144;</div>
           <p class="card-data">
             Busted gaming on school laptop,<br />
             but you are still lit.
@@ -113,23 +115,6 @@
       </div>
     </section>
     <!-- next Page -->
-
-    <section class="game-poster-container padding">
-      <div class="game-poster-img">
-        <img class="poster-img-03" src="./images/Rectangle 67.png" alt="" />
-        <img class="poster-img-04" src="./images/Rectangle 78.png" alt="" />
-      </div>
-      <div class="game-poster-content">
-        <h2 class="headline">
-          <span class="linear-text">Play Games Online</span>Anywhere, Anytime!
-        </h2>
-        <p>
-          PC. dad s phone, moms tablet, or your Chromebook, with Gamer you can
-          play your favorite games online for free, any time, anywhere , on any
-          device.
-        </p>
-      </div>
-    </section>
 
     <!-- Action Games Section Starts here. -->
     <section>
@@ -175,37 +160,40 @@
 
     <!-- Footer Section Starts here. -->
     <footer>
-      <section class="footer-container">
+      <section class="footer-container txt-center">
         <div class="footer-logo">
           <img src="./images/Frame.png" alt="" />
           <h2 class="nav-title"><span class="linear-text">G</span>amer</h2>
         </div>
-        <div class="footer-link">
-          <a href="">Our Story</a>
-          <a href="">Games</a>
-          <a href="">Web Games</a>
-          <a href="">Careers</a>
-          <a href="">Support</a>
-          <a href="">My Account</a>
+        <div class="footer-grid">
+
+          <div class="footer-link">
+            <a href="">Our Story</a>
+            <a href="">Games</a>
+            <a href="">Web Games</a>
+            <a href="">Careers</a>
+            <a href="">Support</a>
+            <a href="">My Account</a>
+          </div>
+          <div class="footer-link-social">
+            <a href="https://www.facebook.com/"
+              ><img src="./images/facebook 1.svg" alt="facebook"
+            /></a>
+            <a href="https://www.instagram.com/explore/tags/intag/top/"
+              ><img src="./images/instagram 1.svg" alt="instagram"
+            /></a>
+            <a href="https://www.linkedin.com/uas/login-submit"
+              ><img src="./images/linkedin 1.svg" alt="linkedin"
+            /></a>
+          </div>
+          <div class="footer-link-terms line-height">
+            <a href="">Terms and Conditions</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Cookie Policy</a>
+            <a href="">Privacy Settings</a>
+          </div>
         </div>
-        <div class="footer-link-social">
-          <a href="https://www.facebook.com/"
-            ><img src="./images/facebook 1.svg" alt="facebook"
-          /></a>
-          <a href="https://www.instagram.com/explore/tags/intag/top/"
-            ><img src="./images/instagram 1.svg" alt="instagram"
-          /></a>
-          <a href="https://www.linkedin.com/uas/login-submit"
-            ><img src="./images/linkedin 1.svg" alt="linkedin"
-          /></a>
-        </div>
-        <div class="footer-link-terms">
-          <a href="">Terms and Conditions</a>
-          <a href="">Privacy Policy</a>
-          <a href="">Cookie Policy</a>
-          <a href="">Privacy Settings</a>
-        </div>
-        <p>Play Games &copy; Gamer &copy; 2000-2023 Gamer Bangladesh</p>
+        <p class="line-height">Play Games &copy; Gamer &copy; 2000-2023 Gamer Bangladesh</p>
       </section>
     </footer>
   </body>
