@@ -1,17 +1,18 @@
 /* Shared Style... */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
 * {
-  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 .btn {
- padding: 21px 40px;
- /* border-radius: 48px; */
- width: 70px;
- height: 16px; 
+  padding: 21px 40px;
+  width: 70px;
+  height: 16px;
 }
 .headline {
   font-size: 48px;
@@ -22,12 +23,56 @@ body {
   font-weight: 500;
   color: #534064;
 }
-
+.linear-text {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* nav section  */
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+
+  align-items: center;
+  /* max-width: 1400px; */
+  /* margin: 0 auto; */
 }
+.nav-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 50%; */
+}
+/*.logo-container img {
+   width: 50px;
+  object-fit: cover;
+  margin-right: 20px; 
+}*/
+.nav-title {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+}
+.nav-item {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 25px;
+  color: white;
+}
+.nav-items-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.nav-item-follow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-manus {
   display: flex;
   justify-content: space-around;
@@ -41,24 +86,161 @@ body {
   display: flex;
   justify-content: flex-start;
 }
-.button-primary {
+/* .button-primary {
   color: white;
   border-radius: 48px;
-  background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
 }
 .button-secondary {
   color: white;
   border-radius: 48px;
-  background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
 }
-/* banner section */
-.goat {
-  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+banner section .goat {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   font-size: 95px;
   font-weight: 800;
 }
 .button-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 20px; */
+}
+/* Main (Online Games) Section Starts here. */
+.online-section {
+  background: #fff;
+}
+.online-title {
+  text-align: center;
+  margin-top: 70px;
+  color: #0b0223;
+}
+.online-details {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.online-funny-videos {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  font-weight: 700;
+}
+.card-data {
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+  width: 342px;
+}
+.online-Container {
+  display: flex;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  /* width: 80%;
+  margin: 0px auto; */
+}
+
+/* play instantly section */
+.play-container {
+  display: flex;
+  flex-basis: auto;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.play-title {
+  text-align: right;
+  font-family: Work Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 125% */
+}
+
+.play-instantly {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.play-img.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73ad21;
+}
+
+/* Action Games Section Starts */
+.action-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.action-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #fff;
+  width: 262px;
+  height: 80px;
+}
+
+/* Footer Section Starts here. */
+.footer-container {
+  background-color: #0b0223;
+  text-align: center;
+  color: #fff;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* gap: 10px; */
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  color: #fff;
+}
+.footer-link-terms {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #fff;
+}
+.footer-link a {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer-link-terms a {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer-container p {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
 }
