@@ -218,9 +218,6 @@ nav-items-container li a {
 .game-poster-img {
   position: relative;
 }
-.game-poster-img img {
-  /* width: 100%; */
-}
 .poster-img-02 {
   position: absolute;
   top: 60%;
@@ -273,6 +270,10 @@ nav-items-container li a {
 
 .line-height{
   line-height:1.5;
+}
+
+.padding{
+  padding: 2rem 0;
 }
 
 .footer-container {
@@ -330,13 +331,17 @@ nav-items-container li a {
 
 /* Small-Device responsive  */
 @media screen and (max-width: 576px) {
-  .banner-container,
-  .game-poster-container {
+  .banner-container{
     flex-direction: column-reverse;
     gap:2r
   }
   .poster-img-01{
     width: 90%;
+
+  }
+  .game-poster-container{
+    flex-direction: column;
+    gap: 50px;
   }
   .nav-container ul{
     flex-direction: column;
@@ -351,5 +356,6 @@ nav-items-container li a {
     display: grid;
     grid-template-columns: repeat(3,1fr);
   }
+
 
 }
