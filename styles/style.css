@@ -212,7 +212,7 @@ nav-items-container li a {
   gap: 12.5rem;
   justify-content: center;
   align-items: center;
-  margin: 200px 0;
+  margin: 100px 0;
 }
 /* .game-poster-content {} */
 .game-poster-img {
@@ -345,6 +345,11 @@ nav-items-container li a {
 
   .nav-container ul li{
      padding:1rem;
+  }
+
+  .action-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
   }
 
 }
